@@ -34,7 +34,7 @@
 
     sudo docker exec -it sql-inject /bin/bash
 
-在容器里，你需要手动启动Apache和MySQL 。运行 zsh 可以更方便的输入
+在容器里，你需要手动启动Apache和MySQL 。运行`zsh`可以更方便的输入
 
     service apache2 start
     service mysql start
@@ -53,3 +53,5 @@
 关闭靶场：在主机上
 
     sudo docker stop sql-inject
+
+如你需要，可以下载网页源码以随时查看此文档
