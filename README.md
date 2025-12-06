@@ -45,6 +45,7 @@
     service apache2 start
     service mysql start
 
+`/`目录下提供了 start.sh 脚本，你也可以使用`./start.sh`快速启动 <br>
 在你的Linux主机里使用`sudo docker inspect sql-inject | IPAdress`查看容器IP，或者在容器中`ifconfig` <br>
 这里假设你的容器IP为 172.17.0.2，在主机里用浏览器访问它（记得改为你自己Docker的IP）
 
@@ -71,7 +72,7 @@
 
     sudo docker run --name sql-inject -p 80:80 -it sql-inject:lateest /bin/sh
 
-将容器80端口映射到本地80端口即可，然后可以使用apache2，php和mysql，免去下载配置的时间
+将容器80端口映射到本地80端口即可，然后可以使用apache2，php和mysql，免去下载配置的时间。然后你可以在其他设备上访问这个容器
 
 
 # 其他
